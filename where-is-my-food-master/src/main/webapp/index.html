@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Where is my food?</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<!--  <div style="width: 50%">
+		<table>
+			<tr>
+				<td style='width: 30%;'>
+					<img class = "newappIcon" src='images/newapp-icon.png'>
+				</td>
+				<td>
+					<!-- The "Hello World!" message comes from /SimpleServlet 
+					<h1 id = "message"></h1>
+					
+					<p class='description'></p> Thanks for creating a <span class="blue">Liberty for Java Starter Application</span>.
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="width: 50%">
+		<input type="file" name="food">
+	</div>-->
+	<!-- Call SimpleServlet to get the "Hello World" message  -->
+	<center><h1 id = "message"></h1></center>
+		<form action="SimpleServlet" method="post" enctype="multipart/form-data">
+			<input name="file" id="file" type="file" accept="image/*;capture=camera">
+			<input type="submit" value="Search" />
+		</form>
+	
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
